@@ -1,0 +1,37 @@
+$background: #bababa;
+$text: #3b3b3b;
+$yellow: #e6cf8b;
+$red: #b56969;
+$blue: #6ba2cf;
+$green: #79a677;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: $blue;
+  background-color: $blue;
+  @import 'content';
+  @import 'recipe';
+  @import 'add';
+  font-size: 1.25rem;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    font-size: 1rem;
+  }
+
+   .edit, .remove, .add {
+    font-size: 1rem !important;
+  }
+  textarea {
+    font-size: 1rem !important;
+  }
+
+}
